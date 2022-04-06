@@ -1,5 +1,5 @@
 # Mail Checker
-> A simple mail checker
+> An mail checker
 
 Checks if a domain has dmarcs, spf record, and a MX
 
