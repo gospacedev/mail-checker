@@ -43,7 +43,7 @@ func checkDom(domain string)  {
 	}
 
 	for _, record := range txtRecords {
-		if strings.HasPrefix(record, "v=spfi"){
+		if strings.HasPrefix(record, "v=spf"){
 			hasSPF = true
 			sprRecord = record
 			break
