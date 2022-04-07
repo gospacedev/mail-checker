@@ -1,7 +1,9 @@
 # Mail Checker
 > An mail checker
 
-Checks if a domain has dmarcs, spf record, and a MX
+## How does it work
+It scans the inputted domain and checks if it has
+DMARC, SPF Record, and a Mail Server
 
 ## Credits
 
