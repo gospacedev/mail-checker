@@ -27,4 +27,4 @@ Then it should show the values:
     
 ## Acknowledgement
 
-Akhil Sharma (https://www.youtube.com/c/AkhilSharmaTech)
+Akhil Sharma https://www.youtube.com/c/AkhilSharmaTech
