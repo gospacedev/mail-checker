@@ -1,4 +1,4 @@
-# Hamster
+# Hedgehog
 A mail checker, it checks the domain if it has a
 DMARC, a SPF Record, and a Mail Server
 
