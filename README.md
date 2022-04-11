@@ -1,5 +1,5 @@
 # Mail Checker
->An mail checker
+>A mail checker
 
 ## How does it work
 It scans the inputted domain and checks if it has
