@@ -1,4 +1,4 @@
-# Mail Checker
+# Hamster
 >A mail checker
 
 ## How does it work
