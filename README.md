@@ -1,9 +1,6 @@
 # Hamster
->A mail checker
-
-## How does it work
-It scans the inputted domain and checks if it has
-DMARC, SPF Record, and a Mail Server
+A mail checker, it checks the domain if it has a
+DMARC, a SPF Record, and a Mail Server
 
 ## Usage
 You can simply run it as:
