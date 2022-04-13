@@ -1,4 +1,4 @@
-# mail-monke
+# mail-checker
 It checks the domain if it has a DMARC, 
 a SPF Record, and a Mail Server
 
