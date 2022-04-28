@@ -25,8 +25,3 @@ Then it should show the values:
 ## Acknowledgement
 
 Akhil Sharma https://www.youtube.com/c/AkhilSharmaTech
-
-### Tip Jar
-
-[![BTC Tip Jar](https://img.shields.io/badge/BTC-tip-yellow.svg?logo=bitcoin&style=flat)](https://www.blockchain.com/btc/address/bc1qvym3nw3ufnhy3q63suq42hgy3stl0fcudpahx9)
-`bc1qvym3nw3ufnhy3q63suq42hgy3stl0fcudpahx9`
