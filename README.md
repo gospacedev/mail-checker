@@ -2,7 +2,8 @@
 It checks the domain if it has a DMARC, 
 a SPF Record, and a Mail Server
 
-![Alt Text](https://img.shields.io/badge/BTC-1HgvMhBraWpr6c72VTjgF2KVZftCDp6Zst-green)
+![For Coffee](https://img.shields.io/badge/BTC-For%20Coffee-green)
+`1HgvMhBraWpr6c72VTjgF2KVZftCDp6Zst`
 
 ## Usage
 You can simply run it as:
