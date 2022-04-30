@@ -4,6 +4,37 @@ It checks the domain if it has a DMARC,
 a SPF Record, and a Mail Server
 
 ## Usage
+```
+go get github.com/gocrazygh/mail-checker
+```
+
+This is an example code:
+
+```go
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"github.com/gocrazygh/mail-checker"
+)
+
+func main() {
+	sci := bufio.NewScanner(os.Stdin)
+	fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
+
+	for sci.Scan(){
+		mail.CheckDom(sci.Text())
+	}
+
+	if err := sci.Err(); err != nil {
+		log.Fatal("Error: Can't read from input: \n", err)
+	}
+}
+```
+
 You can simply run it as:
 
     go run mail.go
