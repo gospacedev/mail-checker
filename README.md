@@ -26,6 +26,8 @@ Then it should show the values:
 ## For Coffee
 BTC: `1F5qqrV9bX8Z1eyvy6MBxyVCKnT8cc4Hpc`
 
+ETH: `0x438dad39b6377db423b18e24267782a6aae8ea5b`
+
 ## Acknowledgement
 
 Akhil Sharma https://www.youtube.com/c/AkhilSharmaTech
