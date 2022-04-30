@@ -1,4 +1,7 @@
 # mail-checker
+
+[![DOGE Donate](https://img.shields.io/badge/DOGE-For%20Coffee-green)](https://dogechain.info/address/DSr9btWDuDcdSg4yXkSMYjbRMLEUqp4ijt)`DSr9btWDuDcdSg4yXkSMYjbRMLEUqp4ijt`
+
 It checks the domain if it has a DMARC, 
 a SPF Record, and a Mail Server
 
