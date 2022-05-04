@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func CheckDom(domain string)  {
+func CheckDom(domain string) {
 	var hasMX, hasSPF, hasDMARC bool
 	var sprRecord, dmarcRecord string
 
@@ -28,7 +28,7 @@ func CheckDom(domain string)  {
 	}
 
 	for _, record := range txtRecords {
-		if strings.HasPrefix(record, "v=spf"){
+		if strings.HasPrefix(record, "v=spf") {
 			hasSPF = true
 			sprRecord = record
 			break
@@ -41,7 +41,7 @@ func CheckDom(domain string)  {
 	}
 
 	for _, record := range dmarcRecords {
-		if strings.HasPrefix(record, "v=DMARC1"){
+		if strings.HasPrefix(record, "v=DMARC1") {
 			hasDMARC = true
 			dmarcRecord = record
 			break
