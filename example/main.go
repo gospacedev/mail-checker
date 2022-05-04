@@ -3,9 +3,9 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/gocrazygh/mail-checker"
 	"log"
 	"os"
-	"github.com/gocrazygh/mail-checker"
 )
 
 func main() {
