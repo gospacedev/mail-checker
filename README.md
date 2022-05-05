@@ -3,6 +3,8 @@
 It checks the domain if it has a DMARC, 
 a SPF Record, and a Mail Server
 
+Donations in bitcoin are welcome: `1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG`
+
 ## Usage
 ```
 go get github.com/gocrazygh/mail-checker
