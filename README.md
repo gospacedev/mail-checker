@@ -1,9 +1,8 @@
 # mail-checker
 
-It checks the domain if it has a DMARC, 
-a SPF Record, and a Mail Server
+It checks the domain if it has a DMARC, a SPF Record, and a Mail Server
 
-Donations in bitcoin are welcome: `1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG`
+Bitcoin donations are welcome: `1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG`
 
 ## Usage
 ```
