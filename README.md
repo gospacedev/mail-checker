@@ -3,6 +3,8 @@
 
 This checks a domain's email information, if it has DMARC, SPF Record, and or a Mail Server
 
+Bitcoin donations are welcome: `1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG`
+
 ## Usage
 ```
 go get github.com/gocrazygh/mail-checker
@@ -53,5 +55,3 @@ Then it should show the values:
     domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
     mailchimp.com
     mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
-    
-Donate Bitcoin: 1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG
