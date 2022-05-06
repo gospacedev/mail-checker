@@ -53,4 +53,4 @@ Then it should show the values:
     mailchimp.com
     mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
     
-Support Me: [Donate Bitcoin to gocrazygh](https://gocrazygh.github.io/gocrazygh/donate)
+Donate Bitcoin: 1J2aMYUnkPXkzEYJUaZY5AKRGZU459NUrG
