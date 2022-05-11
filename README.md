@@ -3,7 +3,7 @@
 
 This checks a domain's email information, if it has DMARC, SPF Record, and or a Mail Server
 
-Donate Bitcoin: 122K2s1DL1W75Y8ZAh4cEsfhRCAgeJDaVX
+Donate Bitcoin: `122K2s1DL1W75Y8ZAh4cEsfhRCAgeJDaVX`
 
 ## Usage
 ```
