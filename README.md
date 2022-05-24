@@ -53,7 +53,3 @@ Then it should show the values:
     domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
     mailchimp.com
     mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
-
-## Support Me
-
-Bitcoin Doantions: `1Code5a8qLMPTKWjN1T6BhZ5HUTPpwFd31`
