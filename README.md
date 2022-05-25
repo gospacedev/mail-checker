@@ -1,5 +1,5 @@
 # mail-checker
-[![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php)
+[![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php) [![Donate Page](https://img.shields.io/badge/Support-Me-green)](https://gocrazygh.github.io/gocrazygh)
 
 This checks a domain's email information, if it has DMARC, SPF Record, and or a Mail Server
 
@@ -53,8 +53,3 @@ Then it should show the values:
     domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
     mailchimp.com
     mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
-
-## Support Me
-Support me and my projects
-
-Bitcoin Donations: **1CoDe**MTTZFoq719AW31etGNPVCqdCanDzh
