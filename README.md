@@ -1,5 +1,5 @@
 # mail-checker
-[![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php)
+[![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php) [![MIT Licence](https://img.shields.io/badge/Donate-Bitcoin-blue)](https://gocrazygh.github.io/gocrazygh/)
 
 This checks a domain's email information, if it has DMARC, SPF Record, and or a Mail Server
 
