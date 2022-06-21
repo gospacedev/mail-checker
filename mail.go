@@ -6,7 +6,9 @@ import (
 	"net"
 	"strings"
 )
-
+// CheckDom takes a domain name as a string, and returns a comma separated string with the domain name,
+// whether it has an MX record, whether it has an SPF record, the SPF record, whether it has a DMARC
+// record, and the DMARC record
 func CheckDom(domain string) {
 	var hasMX, hasSPF, hasDMARC bool
 	var sprRecord, dmarcRecord string
