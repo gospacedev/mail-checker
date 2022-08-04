@@ -53,3 +53,7 @@ Then it should show the values:
     domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
     mailchimp.com
     mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
+
+## Support
+
+[![BTC Tip Jar](https://img.shields.io/badge/BTC-tip-yellow.svg?logo=bitcoin&style=flat)](https://www.blockchain.com/btc/address/16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM) `16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM`
