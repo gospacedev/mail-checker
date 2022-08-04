@@ -56,4 +56,4 @@ Then it should show the values:
 
 ## Support
 
-[![BTC Tip Jar](https://img.shields.io/badge/BTC-tip-yellow.svg?logo=bitcoin&style=flat)](https://www.blockchain.com/btc/address/16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM) `16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM`
+[![BTC Tip Jar](https://img.shields.io/badge/Donate-BTC-yellow.svg?logo=bitcoin&style=flat)](https://www.blockchain.com/btc/address/16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM) `16NrdZ8o2gPL21wH2yh12qyNR5M1CfrFmM`
