@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/gocrazygh/mail-checker"
+	"github.com/gocrazygt/mail-checker"
 	"log"
 	"os"
 )
