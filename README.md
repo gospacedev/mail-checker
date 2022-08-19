@@ -5,7 +5,7 @@ This checks a domain's email information, if it has DMARC, SPF Record, and or a 
 
 ## Usage
 ```
-go get github.com/gocrazygh/mail-checker
+go get github.com/gocrazygt/mail-checker
 ```
 
 This is an example code:
@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"github.com/gocrazygh/mail-checker"
+	"github.com/gocrazygt/mail-checker"
 )
 
 func main() {
