@@ -1,14 +1,14 @@
 # mail-checker
 [![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php)
 
-This checks a domain's email information, if it has DMARC, SPF Record, and or a Mail Server
+Mail checker easily extracts a domain's email DMARC and SPF records. 
 
 ## Usage
 ```
 go get github.com/gocrazygt/mail-checker
 ```
 
-This is an example code:
+Example code:
 
 ```go
 package main
@@ -18,7 +18,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"github.com/gocrazygt/mail-checker"
 )
 
 func main() {
@@ -26,8 +25,9 @@ func main() {
 	fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
 
 	for sci.Scan(){
-		mail.CheckDom(sci.Text())
+		fmt.Println(CheckDomainMX(sci.Text()))
 	}
+	
 
 	if err := sci.Err(); err != nil {
 		log.Fatal("Error: Can't read from input: \n", err)
@@ -35,21 +35,18 @@ func main() {
 }
 ```
 
-You can simply run it as:
+Run the file and enter a domain name:
 
-    go run mail.go
-
-This should show:
-
-    domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
-
-Enter a domain:
-
-    domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
-    mailchimp.com
+    Enter a domain name:
+    google.com
     
-Then it should show the values:
+Then it should show the email information:
 
-    domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord
-    mailchimp.com
-    mailchimp.com, true, false, , true, v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com; ruf=mailto:19ezfriw@fr.dmarcian.com
+    {
+     "Domain": "google.com",
+     "HasMX": true,
+     "HasSPF": false,
+     "HasDMARC": true,
+     "SPRRecord": "",
+     "DMARCRecord": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"
+     }
