@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/gocrazygt/mail-checker"
 	"log"
 	"os"
 )
@@ -13,8 +12,9 @@ func main() {
 	fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
 
 	for sci.Scan(){
-		mail.CheckDom(sci.Text())
+		fmt.Println(CheckDomainMX(sci.Text()))
 	}
+	
 
 	if err := sci.Err(); err != nil {
 		log.Fatal("Error: Can't read from input: \n", err)
