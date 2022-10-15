@@ -5,7 +5,7 @@ Mail checker easily extracts a domain's email DMARC and SPF records.
 
 ## Usage
 ```
-go get github.com/gocrazygt/mail-checker
+go get github.com/gospacedev/mail-checker
 ```
 
 Example code:
