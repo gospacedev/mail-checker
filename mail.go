@@ -16,11 +16,11 @@ import (
 // @property {string} SPRRecord - The SPF record for the domain
 // @property {string} DMARCRecord - The DMARC record for the domain.
 type DomMailInfo struct {
-	Domain string `json:"Domain"`
-	HasMX bool `json:"HasMX"`
-	HasSPF bool `json:"HasSPF"`
-	HasDMARC bool `json:"HasDMARC"`
-	SPRRecord string `json:"SPRRecord"`
+	Domain      string `json:"Domain"`
+	HasMX       bool   `json:"HasMX"`
+	HasSPF      bool   `json:"HasSPF"`
+	HasDMARC    bool   `json:"HasDMARC"`
+	SPRRecord   string `json:"SPRRecord"`
 	DMARCRecord string `json:"DMARCRecord"`
 }
 
