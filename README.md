@@ -1,7 +1,7 @@
 # mail-checker
 [![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php)
 
-Mail checker extracts a domain's email DMARC and SPF records. 
+Mail Checker extracts a domain's email DMARC and SPF records. 
 
 ## Usage
 ```
