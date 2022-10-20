@@ -1,4 +1,4 @@
-package main
+package mail
 
 import (
 	"log"
