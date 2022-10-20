@@ -1,11 +1,8 @@
-module mail-checker
+module github.com/gospacedev/mail-checker
 
 go 1.19
 
-require (
-	github.com/gospacedev/mail-checker v0.0.0-20221020042155-d3e1bed6c53b
-	github.com/spf13/viper v1.13.0
-)
+require github.com/spf13/viper v1.13.0
 
 require (
 	github.com/fsnotify/fsnotify v1.5.4 // indirect

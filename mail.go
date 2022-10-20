@@ -1,4 +1,4 @@
-package mail
+package main
 
 import (
 	"log"
@@ -7,23 +7,6 @@ import (
 
 	"github.com/spf13/viper"
 )
-
-// `DomMailInfo` is a struct with fields `Domain`, `HasMX`, `HasSPF`, `HasDMARC`, `SPRRecord`, and
-// `DMARCRecord`.
-// @property {string} Domain - The domain name
-// @property {bool} HasMX - Does the domain have an MX record?
-// @property {bool} HasSPF - Does the domain have an SPF record?
-// @property {bool} HasDMARC - Does the domain have a DMARC record?
-// @property {string} SPRRecord - The SPF record for the domain
-// @property {string} DMARCRecord - The DMARC record for the domain.
-type DomMailInfo struct {
-	Domain      string `json:"Domain"`
-	HasMX       bool   `json:"HasMX"`
-	HasSPF      bool   `json:"HasSPF"`
-	HasDMARC    bool   `json:"HasDMARC"`
-	SPRRecord   string `json:"SPRRecord"`
-	DMARCRecord string `json:"DMARCRecord"`
-}
 
 /*
 CheckDomainMX takes a domain name as a string, and returns email information
@@ -44,7 +27,7 @@ func CheckDomainMX(domain string, fileName string, fileType string, filePath str
 
 	err := vp.ReadInConfig()
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error: %v\n", err)
 	}
 
 	mxRecords, err := net.LookupMX(domain)
@@ -84,13 +67,11 @@ func CheckDomainMX(domain string, fileName string, fileType string, filePath str
 		}
 	}
 
-	// parse info in config file
 	vp.Set("domain", domain)
 	vp.Set("HasMX", HasMX)
 	vp.Set("HasSPF", HasSPF)
 	vp.Set("HasDMARC", HasDMARC)
 	vp.Set("SPRecord", SPRRecord)
 	vp.Set("DMARCRecord", DMARCRecord)
-
 	vp.WriteConfig()
 }

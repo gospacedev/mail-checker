@@ -1,0 +1,8 @@
+{
+  "dmarcrecord": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+  "domain": "google.com",
+  "hasdmarc": true,
+  "hasmx": true,
+  "hasspf": false,
+  "sprecord": ""
+}
