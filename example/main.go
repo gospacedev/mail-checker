@@ -1,10 +1,6 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"log"
-	"os"
 
 	"github.com/gospacedev/mail-checker"
 )
