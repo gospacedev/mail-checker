@@ -1,23 +1,23 @@
 package main
 
 import (
-        "bufio"
-        "fmt"
-        "log"
-        "os"
+	"bufio"
+	"fmt"
+	"log"
+	"os"
 
-        "github.com/gospacedev/mail-checker"
+	"github.com/gospacedev/mail-checker"
 )
 
 func main() {
-        sci := bufio.NewScanner(os.Stdin)
-        fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
+	sci := bufio.NewScanner(os.Stdin)
+	fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
 
-        for sci.Scan() {
-                fmt.Println(mail.CheckDomainMX(sci.Text()))
-        }
+	for sci.Scan() {
+		fmt.Println(mail.CheckDomainMX(sci.Text()))
+	}
 
-        if err := sci.Err(); err != nil {
-                log.Fatal("Error: Can't read from input: \n", err)
-        }
+	if err := sci.Err(); err != nil {
+		log.Fatal("Error: Can't read from input: \n", err)
+	}
 }
