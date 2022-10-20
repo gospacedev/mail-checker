@@ -3,14 +3,15 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/gospacedev/mail-checker.svg)](https://pkg.go.dev/github.com/gospacedev/mail-checker)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gospacedev/mail-checker)](https://goreportcard.com/report/github.com/gospacedev/mail-checker)
 
-Mail Checker extracts a domain's email DMARC and SPF records. 
+Mail Checker extracts a domain's email information.
 
 ## Usage
 ```
 go get github.com/gospacedev/mail-checker
 ```
 
-Example code:
+Mail Checker takes in the targeted domain and the config file info and returns 
+the domain's mail information to the config file:
 
 ```go
 package main
@@ -23,8 +24,8 @@ func main() {
 
 ```
     
-The mail information is outputed to the config file, Mail Checker 
-can write to JSON, TOML, and YAML config files.
+The mail information is outputted to the config file, Mail Checker 
+supports writing to JSON, TOML, and YAML config files:
 
 ```json
 {
