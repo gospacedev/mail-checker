@@ -1,10 +1,11 @@
 package mail
 
 import (
-	"encoding/json"
 	"log"
 	"net"
 	"strings"
+
+	"github.com/spf13/viper"
 )
 
 // `DomMailInfo` is a struct with fields `Domain`, `HasMX`, `HasSPF`, `HasDMARC`, `SPRRecord`, and
@@ -24,12 +25,27 @@ type DomMailInfo struct {
 	DMARCRecord string `json:"DMARCRecord"`
 }
 
-// CheckDomainMX takes a domain name as a string, and returns a JSON string containing the domain name,
-// whether the domain has MX records, whether the domain has an SPF record, whether the domain has a
-// DMARC record, the SPF record, and the DMARC record
-func CheckDomainMX(domain string) string {
+/*
+CheckDomainMX takes a domain name as a string, and returns email information
+containing the domain name, whether the domain has MX records, whether the domain
+has an SPF record, whether the domain has a DMARC record, the SPF record, and the
+DMARC record to a specified config file.
+*/
+func CheckDomainMX(domain string, fileName string, fileType string, filePath string) {
 	var HasMX, HasSPF, HasDMARC bool
 	var SPRRecord, DMARCRecord string
+
+	vp := viper.New()
+
+	// setup config file
+	vp.SetConfigName(fileName)
+	vp.SetConfigType(fileType)
+	vp.AddConfigPath(filePath)
+
+	err := vp.ReadInConfig()
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	mxRecords, err := net.LookupMX(domain)
 
@@ -68,11 +84,13 @@ func CheckDomainMX(domain string) string {
 		}
 	}
 
-	DomMailInfoNew := DomMailInfo{domain, HasMX, HasSPF, HasDMARC, SPRRecord, DMARCRecord}
-	DomMailInfoNewJson, err := json.MarshalIndent(DomMailInfoNew, " ", "    ")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// parse info in config file
+	vp.Set("domain", domain)
+	vp.Set("HasMX", HasMX)
+	vp.Set("HasSPF", HasSPF)
+	vp.Set("HasDMARC", HasDMARC)
+	vp.Set("SPRecord", SPRRecord)
+	vp.Set("DMARCRecord", DMARCRecord)
 
-	return string(DomMailInfoNewJson)
+	vp.WriteConfig()
 }
