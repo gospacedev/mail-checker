@@ -1,6 +1,7 @@
 # mail-checker
 [![MIT Licence](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/mit-license.php)
 [![Go Reference](https://pkg.go.dev/badge/github.com/gospacedev/mail-checker.svg)](https://pkg.go.dev/github.com/gospacedev/mail-checker)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gospacedev/mail-checker)](https://goreportcard.com/report/github.com/gospacedev/mail-checker)
 
 Mail Checker extracts a domain's email DMARC and SPF records. 
 
@@ -14,40 +15,24 @@ Example code:
 ```go
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"log"
-	"os"
-)
+import "github.com/gospacedev/mail-checker"
 
 func main() {
-	sci := bufio.NewScanner(os.Stdin)
-	fmt.Println("domain, hasMX, hasSPF, sprRecord, hasDMARC, dmarcRecord")
+	mail.CheckDomainMX("google.com", "config", "json", ".")
+}
 
-	for sci.Scan(){
-		fmt.Println(CheckDomainMX(sci.Text()))
-	}
-	
+```
+    
+The mail information is outputed to the config file, Mail Checker 
+can write to JSON, TOML, and YAML config files.
 
-	if err := sci.Err(); err != nil {
-		log.Fatal("Error: Can't read from input: \n", err)
-	}
+```json
+{
+  "dmarcrecord": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+  "domain": "google.com",
+  "hasdmarc": true,
+  "hasmx": true,
+  "hasspf": false,
+  "sprecord": ""
 }
 ```
-
-Run the file and enter a domain name:
-
-    Enter a domain name:
-    google.com
-    
-Then it should show the email information:
-
-    {
-     "Domain": "google.com",
-     "HasMX": true,
-     "HasSPF": false,
-     "HasDMARC": true,
-     "SPRRecord": "",
-     "DMARCRecord": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"
-     }
