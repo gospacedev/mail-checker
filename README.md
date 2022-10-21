@@ -3,7 +3,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/gospacedev/mail-checker.svg)](https://pkg.go.dev/github.com/gospacedev/mail-checker)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gospacedev/mail-checker)](https://goreportcard.com/report/github.com/gospacedev/mail-checker)
 
-Mail Checker extracts a domain's email information.
+Mail Checker extracts a domain's DMARC and SPF Record.
 
 ## Usage
 ```
