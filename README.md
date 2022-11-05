@@ -1,4 +1,4 @@
-# mail-checker
+# Mail Checker
 [![MIT Licence](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/mit-license.php)
 [![Go Reference](https://pkg.go.dev/badge/github.com/gospacedev/mail-checker.svg)](https://pkg.go.dev/github.com/gospacedev/mail-checker)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gospacedev/mail-checker)](https://goreportcard.com/report/github.com/gospacedev/mail-checker)
